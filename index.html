@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylecours.css" />
+    
+    <title>Titre</title>
+  </head>
+
+  <body>
+
+    <div class="title"> Titre</div>
+
+    <div class="content">
+      <div class="sommaire">
+        <h3 id="sommaire">- VS Code -</h3>
+        <ul class="list_sommaire">  
+            <li><strong><a href="https://code.visualstudio.com/">VS Code Install</a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+        </ul>
+      </div>
+      <div class="sommaire">
+        <h3 >- <a href="#git">Github</a> -</h3>
+        <ul class="list_sommaire">
+          <li><a href="https://git-scm.com/downloads" target="_blank">Github Local install</a></li>
+          <li><a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a></li>
+          <li><a href="https://about.gitlab.com/GitLab" target="_blank">Gitlab</a></li>
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="sommaire">
+        <h3 id="sommaire">- BDD -</h3>
+        <ul class="list_sommaire">  
+            <li><strong><a href="https://dev.mysql.com/downloads/installer/" target="_blank">https://dev.mysql.com/downloads/installer/</a></strong></li>
+            <li><strong><a href="#sql"></a>MySQL Install</strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+            <li><strong><a href="#"></a></strong></li>
+        </ul>
+      </div>
+      <div class="sommaire">
+        <h3 href="#git">-  -</h3>
+        <ul class="list_sommaire">
+
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+          <li><a href="" target="_blank"></a></li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="sommaire_fixed"><a href="#sommaire">Index</a></h3>
+    
+    <h2 id="git">Github</h2>
+    <h3>Initialisez Git</h3>
+    <div class="inner_code">$ git config --global user.name "John Doe"</div><br>
+    <div class="inner_code">$ git config --global user.email johndoe@example.com</div><br>
+    Grâce à l’option <div class="inner_code">--global</div>, vous n’aurez besoin de le faire qu'une fois.<br /><br />
+
+  Si vous souhaitez par contre, pour un projet spécifique, changer votre nom d’utilisateur, vous devrez repasser cette
+  ligne mais sans le --global.<br />
+  Afin de vérifier que vos paramètres aient bien été pris en compte, et vérifier les autres paramètres, il suffit de
+  passer la commande <div class="inner_code">git config --list</div><br><br>
+  Il est recommandé d’activer les couleurs afin d’améliorer la lisibilité des différentes branches.<br>
+  Pour cela, passez ces trois lignes dans Git Bash :<br>
+    <div class="inner_code">$ git config --global color.diff auto</div><br>
+    <div class="inner_code">$ git config --global color.status auto</div><br>
+    <div class="inner_code">$ git config --global color.branch auto</div><br>
+
+
+  <h2 id="sql">My SQL</h2>
+  <div class="remarque">
+    Je vous conseille de télécharger le deuxième programme (la version “community”),<br>
+     qui dispose d’options supplémentaires par rapport au premier (la version “web”).
+  </div><br>
+  <figure>
+    <img src="media/4_MySQL_install.png" alt="">
+    <figcaption>Écran d'installation MySQL</figcaption>
+  </figure><br>
+  Une fois le programme téléchargé, lancez-le en double-cliquant dessus ; vous devriez arriver sur cette fenêtre :<br>
+  <figure>
+    <img src="media/5_MySQL_install_2.png" alt="">
+    <figcaption>Fenêtre d'acceptation des conditions générales</figcaption>
+  </figure><br>
+  Sur l’écran suivant, on vous demandera de faire un choix.<br>
+   Sélectionnez “Developer Default” pour installer MySQL dans son entièreté.<br>
+   <figure>
+    <img src="media/6_MySQL_install_3.png" alt="">
+    <figcaption>Sélection du paramétrage par défaut</figcaption>
+  </figure><br>
+  <div class="remarque">
+    Les autres options sont utiles si vous utilisez MySQL via un outil externe,<br>
+    ou que vous avez déjà votre base de données.<br>
+    Cliquez ensuite sur Suivant.
+  </div><br>
+  Une fois arrivé sur la dernière étape, validez et c’est bon, MySQL est installé sur votre machine !<br>
+  Il nous reste maintenant à le lancer.
+
+  <h4>2.Lancez MySQL sur votre ordinateur</h4>
+  Pour lancer MySQL sur Windows, double-cliquez sur la console MySQL.<br>
+  Celle-ci doit avoir apparu dans vos programmes, suite à l’installation précédente.<br>
+  Une fois celle-ci lancée, vous vous retrouvez dans un terminal.<br>
+  C’est ici que vous allez pouvoir gérer votre future base de données.
+
+  <h4>3.Créez le mot de passe de l’utilisateur root de votre BDD</h4>
+  Avant de pouvoir lancer MySQL, il vous faut créer un utilisateur dit root, qui sera l’utilisateur nous permettant de manipuler notre BDD.<br>
+  <p>En informatique, et notamment dans le monde des bases de données, l’utilisateur dit “root” (ou racine) est un utilisateur qui a tous les droits (création, suppression, mise à jour).<br>
+     C’est celui qu’on utilise pour installer des logiciels sur notre machine.<br>
+      Mais attention à ne jamais l’utiliser en production !<br>
+    En effet, il serait très dangereux qu’un utilisateur puisse l’utiliser, car il obtiendrait l’accès à toutes nos données.</p>
+    <div class="remarque">
+      “Utiliser en production” désigne l’utilisation de votre base par votre application, depuis un serveur.<br>
+      Alors que “l’utilisation en local” signifie l’utilisation sur votre ordinateur, à des fins de développement uniquement.
+    </div><br>
+    Pour créer le mot de passe “root”, utilisez la commande  <strong><u>mysqladmin -u root password 'votresupermotdepassetrescomplique'</u></strong>   (vous l’aurez compris, remplacez le mot de passe par celui que vous aurez choisi).<br>
+    Vous pouvez vous féliciter, vous venez d’installer MySQL sur votre Windows !
+
+
+
+  </body>
+  </html>
+
